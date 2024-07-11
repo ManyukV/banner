@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Test task</title>
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,9 +22,9 @@
             не менее 2500 средних и малых проектов. Используя знания и
             накопленный опыт мы можем предложить
           </p>
-          <button>
+          <button data-open>
             <span> Попробовать бесплатно </span>
-            <img src="./img/arrow.png" alt="" />
+            <img src="./img/arrow.png" alt="перейти" />
           </button>
         </div>
         <div class="banner__img">
@@ -32,5 +32,27 @@
         </div>
       </div>
     </section>
+    <div class="modal hide">
+      <div class="modal__dialog">
+        <div class="modal__content">
+          <button class="modal__close" data-close>
+            <img src="./img/close.png" alt="закрыть" />
+          </button>
+          <form action="#">
+            <h2>Войти в систему</h2>
+            <input type="text" placeholder="Email/Телефон" />
+            <input type="password" placeholder="Пароль" />
+            <div class="checkbox-container">
+              <input type="checkbox" id="checkbox" class="checkbox" />
+              <label for="checkbox" id="checkbox-label">Запомнить пароль</label>
+            </div>
+            <a href="#">Восстановить</a>
+            <button class="login">Войти</button>
+            <button class="register">Зарегестрироваться</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./script/script.js"></script>
   </body>
 </html>

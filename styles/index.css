@@ -29,7 +29,12 @@
   justify-content: space-between;
   align-items: center;
   border-radius: 10px;
-  padding-left: 40px;
+  padding-left: 50px;
+  overflow: hidden;
+}
+
+.banner__title {
+  width: 510px;
 }
 
 .banner__title h1 {
@@ -53,11 +58,26 @@
 .banner__title button {
   border: none;
   border-radius: 60px;
-  padding: 12px 24px 12px 12px;
+  padding: 12px 12px 12px 12px;
   background-color: rgba(36, 76, 152, 1);
+  display: flex;
+  align-items: center;
+}
+
+.banner__title button span {
   color: rgba(255, 255, 255, 1);
   font-family: "Manrope", sans-serif;
-  font-size: 28px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 28.8px;
+  padding-right: 20px;
+}
+
+.banner__title button img {
+  object-fit: cover;
+}
+
+.banner__img img {
+  display: block;
+  object-fit: cover;
 }
